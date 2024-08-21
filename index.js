@@ -16,7 +16,7 @@ app.use(session({
     resave: true,
     saveUninitialized: true,
     cookie: {  
-        maxAge: 1000 * 60 * 10 // 1 minuto
+        maxAge: 1000 * 60 * 2 // 2 minutos
     }
 }));
 // quando buscas /node_modules, ele vai buscar na pasta node_modules
