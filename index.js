@@ -16,11 +16,11 @@ app.use(session({
     resave: true,
     saveUninitialized: true,
     cookie: {  
-        maxAge: 1000 * 60 * 1 // 1 minuto
+        maxAge: 1000 * 60 * 10 // 1 minuto
     }
 }));
 // quando buscas /node_modules, ele vai buscar na pasta node_modules
-app.use('/node_modules', express.static('node_modules'));
+app.use('/node_modules', express.static('./node_modules'));
 app.use(express.static('./public'));
 
 app.get('/', (requisicao, resposta) => {

@@ -12,7 +12,51 @@
 </head>
 
 <body>
-    Testesas
+   <div class="container">
+        <a href="/eventos.html">Voltar</a>
+        <h1>BLACKOUT</h1>
+        <p>Presidente Prudente, São Paulo</p>
+        <div>
+            <p class="m-0"><strong>Endereço</strong></p>
+            <p class="m-0">Umê Brasa e Mar - Avenida Manoel Goulart, 3600 - Vila Santa Helena</p>
+            <p class="m-0">Presidente Prudente, São Paulo</p>
+        </div>
+
+        <div>
+            <p class="m-0"><strong>Acontecerá em</strong></p>
+            <p class="m-0">31 de Agosto de 2024 às 23:00 até 1 de Setembro de 2024 às 06:00 (Horário de Brasília)</p>
+        </div>
+
+        <div>
+            <p class="m-0"><strong>Classificação</strong></p>
+            <p class="m-0">18 anos</p>
+        </div>
+
+        <div>
+            <p class="m-0"><strong>Line Up DJ's</strong></p>
+            <p class="m-0">23:00 - Fred Blaya</p>
+            <p class="m-0">00:00 - Geysa Spinelli</p>
+            <p class="m-0">01:00 - Lu.cian aka FractaLL</p>
+            <p class="m-0">02:30 - DASHDOT - The Return</p>
+            <p class="m-0">04:00 - Digo Cavalcante</p>
+        </div>
+
+        <div>
+            <p class="m-0"><strong>Valor $30,00</strong></p>
+            <input type="hidden" id="valor" value="30">
+            <p class="m-0">20 restantes</p>
+            <input type="hidden" id="restantes" value="20">
+            <div class="col-6 pt-2 simula">
+                <label for=""><strong>Quantidade</strong></label>
+                <input type="number" class="form-control" id="quantidade" value="">
+                <button onclick="calcula()" class="btn btn-primary my-2 d-block">Simular</button>
+                <label for=""><strong>Total</strong></label>
+                <input type="number" class="form-control" id="total" readonly>
+            </div>
+        </div>
+
+
+   </div>
     <!-- Bootstrap JS -->
     <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
     <!-- Custom JS -->

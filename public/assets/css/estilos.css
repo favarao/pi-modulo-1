@@ -1,3 +1,21 @@
-body{
-    margin:0;
+.evento-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    border-radius: 20px;
+    border: 1px solid black;
+    padding: 30px;
+}
+.evento-content p {
+    margin: 0;
+}
+.evento-content a{
+    margin-top: auto;
+    margin-left: auto;
+}
+
+.simula{
+    background: #cbcbcb;
+    padding: 20px;
+    border-radius: 10px;
 }
