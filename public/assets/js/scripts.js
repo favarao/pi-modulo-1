@@ -1,8 +1,9 @@
 
     function calcula() {
-        var valor = document.getElementById("valor").value;
-        var quantidade = document.getElementById("quantidade").value;
-        var restantes = document.getElementById("restantes").value;
+        var valor = parseInt(document.getElementById("valor").value);
+        var quantidade = parseInt(document.getElementById("quantidade").value);
+        document.getElementById("quantidade").value = quantidade;
+        var restantes = parseInt(document.getElementById("restantes").value);
         if(quantidade<0 || quantidade>restantes)
         {
             document.getElementById("total").value ='';
