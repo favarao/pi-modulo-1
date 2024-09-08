@@ -3,7 +3,11 @@ export function autenticar(requisicao, resposta){
     const senha   = requisicao.body.senha;
     if (usuario == 'joao' && senha == 'fipp') {
         requisicao.session.autenticado = true;
-        resposta.redirect('/eventos.html');
+        const paginaOriginal = requisicao.session.paginaOriginal || '/';
+        delete requisicao.session.paginaOriginal; // Limpa a URL original após o redirecionamento
+        resposta.redirect(paginaOriginal);
+        // resposta.redirect('/eventos.html');
+        
     }
     else
     {
@@ -25,6 +29,7 @@ export function verificaSessao(requisicao, resposta, next){
     if (requisicao.session.autenticado){
         next();
     } else {
+        requisicao.session.paginaOriginal = requisicao.originalUrl;
         resposta.redirect('/login.html');
     }
 }
